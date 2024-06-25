@@ -26,4 +26,44 @@ apelido = "Sanders"
 endereco = "Rua x"
 codPostal = 83225456
 
-print(nome,apelido,endereco,codPostal)
+#print(nome,apelido,endereco,codPostal)
+
+#nome1 = input("Qual é o seu nome?")
+#apelido1 = input("Qual é o seu apelido?")
+#endereco1 = input("Qual é o seu endereço?")
+#codPostal1 = input("Qual é o seu código postal?")
+
+#print(nome1, apelido1, endereco1, codPostal1)
+
+#aividade 02
+
+#nome2 = input("Por favor digite um nome:")
+#ano2 = input("Por favor digite um ano:")
+
+#print(nome2, "é um(a) viajante cavaleira, nascida no ano", ano2)
+#print("Certa manhã,", nome2, "acordou com um barulho terrível: um dragão se aproxima da aldeia.")
+#print("Somente", nome2, "poderia salvar os moradores da aldeia.")
+
+#atividade 03
+
+#cidade = "São Paulo"
+#print(cidade)
+#cidade = input("Escreva o nome da nova cidade")
+#print("Agora a cidade é", cidade)
+
+#atividade 04
+
+#string = input("adicione um texto á string:")
+#inteiro = input("escreva um número inteiro:")
+#float = input("escreva um número racional")
+
+#print(string, "string")
+#print(inteiro, "inteiro")
+#print(float, "float")
+
+#Atividade 05
+
+frase1 = "aqui estou mais um dia"
+frase2 = "sobre o olhar sanguinário do vigia"
+
+print(frase1, "" + frase2)
