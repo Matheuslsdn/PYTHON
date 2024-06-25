@@ -26,40 +26,40 @@ apelido = "Sanders"
 endereco = "Rua x"
 codPostal = 83225456
 
-#print(nome,apelido,endereco,codPostal)
+print(nome,apelido,endereco,codPostal)
 
-#nome1 = input("Qual é o seu nome?")
-#apelido1 = input("Qual é o seu apelido?")
-#endereco1 = input("Qual é o seu endereço?")
-#codPostal1 = input("Qual é o seu código postal?")
+nome1 = input("Qual é o seu nome?")
+apelido1 = input("Qual é o seu apelido?")
+endereco1 = input("Qual é o seu endereço?")
+codPostal1 = input("Qual é o seu código postal?")
 
-#print(nome1, apelido1, endereco1, codPostal1)
+print(nome1, apelido1, endereco1, codPostal1)
 
 #aividade 02
 
-#nome2 = input("Por favor digite um nome:")
-#ano2 = input("Por favor digite um ano:")
+nome2 = input("Por favor digite um nome:")
+ano2 = input("Por favor digite um ano:")
 
-#print(nome2, "é um(a) viajante cavaleira, nascida no ano", ano2)
-#print("Certa manhã,", nome2, "acordou com um barulho terrível: um dragão se aproxima da aldeia.")
-#print("Somente", nome2, "poderia salvar os moradores da aldeia.")
+print(nome2, "é um(a) viajante cavaleira, nascida no ano", ano2)
+print("Certa manhã,", nome2, "acordou com um barulho terrível: um dragão se proxima da aldeia.")
+print("Somente", nome2, "poderia salvar os moradores da aldeia.")
 
 #atividade 03
 
-#cidade = "São Paulo"
-#print(cidade)
-#cidade = input("Escreva o nome da nova cidade")
-#print("Agora a cidade é", cidade)
+cidade = "São Paulo"
+print(cidade)
+cidade = input("Escreva o nome da nova cidade")
+print("Agora a cidade é", cidade)
 
 #atividade 04
 
-#string = input("adicione um texto á string:")
-#inteiro = input("escreva um número inteiro:")
-#float = input("escreva um número racional")
+string = input("adicione um texto á string:")
+inteiro = input("escreva um número inteiro:")
+float = input("escreva um número racional")
 
-#print(string, "string")
-#print(inteiro, "inteiro")
-#print(float, "float")
+print(string, "string")
+print(inteiro, "inteiro")
+print(float, "float")
 
 #Atividade 05
 
@@ -67,3 +67,13 @@ frase1 = "aqui estou mais um dia"
 frase2 = "sobre o olhar sanguinário do vigia"
 
 print(frase1, "" + frase2)
+
+ano = int(input("coloque aqui seu ano de nascimento:"))
+print(f"Ao fim de 2024 você terá: {2024 - ano} ")
+
+altura = float(input("Qual a sua altura?"))
+peso = float(input("Qual o seu peso"))
+
+let = peso / (altura / 100) * 2
+
+print(f"Seu IMC é: {let}")
