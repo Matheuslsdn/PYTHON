@@ -53,9 +53,19 @@
 
 # print(f"A média do aluno é {(nota1 + nota2 + nota3 + nota4) / 4}")
 #5
-numero = int(input("Digite um numero: "))
+# numero = int(input("Digite um numero: "))
 
-if numero % 2 == 0:
-    print("O numero é par")
+# if numero % 2 == 0:
+#     print("O numero é par")
+# else:
+#     print("O numero é impar")
+
+#
+local = str(input("Para onde você quer viajar?"))
+orcamento = float(input("Qual é o valor que você deseja gastar?"))
+data = str(input("Que dia você irá?"))
+if orcamento > 5000:
+    print("Você pode ir para o local que deseja")
 else:
-    print("O numero é impar")
+    print("Você não pode ir para o local que deseja")
+    
