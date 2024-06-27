@@ -46,9 +46,16 @@
 # print("pneu trocado")
 
 #4
-nota1 = float(input("Qual a nota do 1° bimestre?"))
-nota2 = float(input("Qual a nota do 2° bimestre?"))
-nota3 = float(input("Qual a nota do 3° bimestre?"))
-nota4 = float(input("Qual a nota do 4° bimestre?"))
+# nota1 = float(input("Qual a nota do 1° bimestre?"))
+# nota2 = float(input("Qual a nota do 2° bimestre?"))
+# nota3 = float(input("Qual a nota do 3° bimestre?"))
+# nota4 = float(input("Qual a nota do 4° bimestre?"))
 
-print(f"A média do aluno é {(nota1 + nota2 + nota3 + nota4) / 4}")
+# print(f"A média do aluno é {(nota1 + nota2 + nota3 + nota4) / 4}")
+#5
+numero = int(input("Digite um numero: "))
+
+if numero % 2 == 0:
+    print("O numero é par")
+else:
+    print("O numero é impar")
