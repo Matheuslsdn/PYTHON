@@ -60,7 +60,7 @@ if numero % 2 == 0:
 else:
      print("O numero é impar")
 
-#
+#11
 local = str(input("Para onde você quer viajar?"))
 orcamento = float(input("Qual é o valor que você deseja gastar?"))
 data = str(input("Que dia você irá?"))
