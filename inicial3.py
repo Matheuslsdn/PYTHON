@@ -206,14 +206,72 @@
 #     print("Os numeros são iguais")
 
 #atividade 31
-nome1 = str(input("Qual é o seu nome? "))
-idade1 = int(input("Qual é a sua idade? "))
-nome2 = str(input("Qual é o seu nome? "))
-idade2 = int(input("Qual é a sua idade? "))
+# nome1 = str(input("Qual é o seu nome? "))
+# idade1 = int(input("Qual é a sua idade? "))
+# nome2 = str(input("Qual é o seu nome? "))
+# idade2 = int(input("Qual é a sua idade? "))
 
-if idade1 > idade2:
-    print(f"O {nome1} é mais velho que {nome2} ")
-elif idade1 < idade2:
-    print(f"O {nome2} é mais velho que {nome1} ")
+# if idade1 > idade2:
+#     print(f"O {nome1} é mais velho que {nome2} ")
+# elif idade1 < idade2:
+#     print(f"O {nome2} é mais velho que {nome1} ")
+# else:
+#     print(f"{nome1} e {nome2} tem a mesma idade")
+
+#atividade 32 - Cola
+# numero5 = int(input("Digite um número "))
+
+# if numero5 >= 5 and numero5 <= 8:
+#     print("O número está entre 5 e 8")
+
+
+# numero6 = int(input("Digite um número "))
+
+# if numero6 >= 5 or numero6 <= 8:
+#     print("O número está entre 5 e 8")
+
+#atividade 33 
+# idade = int(input("Qual é a sua idade? "))
+
+# if idade < 5 and idade > 100:
+#     print("Idade inválida")
+# elif idade <= 5:
+#     print("Se você realmente tivesse essa idade não saberia ler")
+# elif idade > 100:
+#     print("Se você realmente tivesse essa idade não estaria mexendo nesse aparelho")
+# elif idade >= 6 and idade < 15:
+#     print("Você é uma criança, vai estudar e larga esse free fire")
+# elif idade >= 16 and idade < 58:
+#     print("Você é um adulto, vai trabalhar e cuida dessa saúde meu parça")
+# else:
+#     print("Vou nem dizer nada, você pode morrer a qualquer momento, CUIDADO")
+
+#atividade 34
+# nome = str(input("Digite seu nome "))
+
+# if nome == "huguinho" or nome == "zezinho" or nome == "luizinho":
+#     print("Você é um sobrinho do pato Donald")
+# elif nome == "chiquinho" or nome == "francisquinho":
+#     print("Você é um sobrinha do Mickey Mouse")
+# else:
+#     print("Você não é sobrinho de ninguém")
+
+#atividade 35
+nota = int(input("Qual foi sua ponuação total da prova? "))
+
+if nota < 0:
+    print("Nota inválida")
+elif nota >= 0 and nota <= 49:
+    print("Você foi reprovado")
+elif nota >= 50 and nota <= 59:
+    print("Você foi reprovado")
+elif nota >= 60 and nota <= 69:
+    print("Você foi reprovado")
+elif nota >= 70 and nota <= 79:
+    print("Você foi reprovado")
+elif nota >= 80 and nota <= 89:
+    print("Você foi reprovado")
+elif nota >= 90 and nota <= 100:
+    print("Você foi reprovado")
 else:
-    print(f"{nome1} e {nome2} tem a mesma idade")
+    print("impossivel passar de 100")
