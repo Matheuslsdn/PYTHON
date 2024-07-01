@@ -257,21 +257,39 @@
 #     print("Você não é sobrinho de ninguém")
 
 #atividade 35
-nota = int(input("Qual foi sua ponuação total da prova? "))
+# nota = int(input("Qual foi sua ponuação total da prova? "))
 
-if nota < 0:
-    print("Nota inválida")
-elif nota >= 0 and nota <= 49:
-    print("Você foi reprovado")
-elif nota >= 50 and nota <= 59:
-    print("Você foi reprovado")
-elif nota >= 60 and nota <= 69:
-    print("Você foi reprovado")
-elif nota >= 70 and nota <= 79:
-    print("Você foi reprovado")
-elif nota >= 80 and nota <= 89:
-    print("Você foi reprovado")
-elif nota >= 90 and nota <= 100:
-    print("Você foi reprovado")
+# if nota < 0:
+#     print("Nota inválida")
+# elif nota >= 0 and nota <= 49:
+#     print("Você foi reprovado")
+# elif nota >= 50 and nota <= 59:
+#     print("1")
+# elif nota >= 60 and nota <= 69:
+#     print("2")
+# elif nota >= 70 and nota <= 79:
+#     print("3")
+# elif nota >= 80 and nota <= 89:
+#     print("4")
+# elif nota >= 90 and nota <= 100:
+#     print("5")
+# else:
+#     print("impossivel passar de 100")
+
+#atividade 36
+# numero = int(("Digite um número "))
+
+# if numero % 3 == 0:
+#     print("O número é divisível por 3")
+# elif numero % 5 == 0:
+#     print("O número é divisível por 5")
+
+
+
+#atividade 37
+ano = int(input("Digite o ano você está "))
+
+if ano % 4 == 0 or ano % 100 == 0 and ano % 400 == 0:
+    print("O ano é bissexto")
 else:
-    print("impossivel passar de 100")
+    print("O ano não é bissexto")
