@@ -154,43 +154,66 @@
 #         print("Você pode votar, mas não é obrigado!")
 
 #atividade 29
-mes = int(input("Digite o numero do mês requerido: "))
+# mes = int(input("Digite o numero do mês requerido: "))
 
-if mes == 1:
-    print("Janeiro")
+# if mes == 1:
+#     print("Janeiro")
+# else:
+#     if mes == 2:
+#         print("Fevereiro")
+#     else:
+#         if mes == 3:
+#             print("Março")
+#         else:
+#             if mes == 4:
+#                 print("Abril")
+#             else:
+#                 if mes == 5:
+#                     print("Maio")
+#                 else:
+#                     if mes == 6:
+#                         print("Junho")
+#                     else:
+#                         if mes == 7:
+#                             print("Julho")
+#                         else:
+#                             if mes == 8:
+#                                 print("Agosto")
+#                             else:
+#                                 if mes == 9:
+#                                     print("Setembro")
+#                                 else:
+#                                     if mes == 10:
+#                                         print("Outubro")
+#                                     else:
+#                                         if mes == 11:
+#                                             print("Novembro")
+#                                         else:
+#                                             if mes == 12:
+#                                                 print("Dezembro")
+#                                             else:
+#                                                 print("Mês inválido")
+
+#atividade 30
+# num10 = int(input("Digite um numero: "))
+# num11 = int(input("Digite um numero: "))
+
+# if num10 > num11:
+#     print(num10)
+# elif num10 < num11:
+#     print(num11)
+# else:
+#     print("Os numeros são iguais")
+
+#atividade 31
+nome1 = str(input("Qual é o seu nome? "))
+idade1 = int(input("Qual é a sua idade? "))
+nome2 = str(input("Qual é o seu nome? "))
+idade2 = int(input("Qual é a sua idade? "))
+
+if idade1 > idade2:
+    print(f"O {nome1} é mais velho que {nome2} ")
+elif idade1 < idade2:
+    print(f"O {nome2} é mais velho que {nome1} ")
 else:
-    if mes == 2:
-        print("Fevereiro")
-    else:
-        if mes == 3:
-            print("Março")
-        else:
-            if mes == 4:
-                print("Abril")
-            else:
-                if mes == 5:
-                    print("Maio")
-                else:
-                    if mes == 6:
-                        print("Junho")
-                    else:
-                        if mes == 7:
-                            print("Julho")
-                        else:
-                            if mes == 8:
-                                print("Agosto")
-                            else:
-                                if mes == 9:
-                                    print("Setembro")
-                                else:
-                                    if mes == 10:
-                                        print("Outubro")
-                                    else:
-                                        if mes == 11:
-                                            print("Novembro")
-                                        else:
-                                            if mes == 12:
-                                                print("Dezembro")
-                                            else:
-                                                print("Mês inválido")
-
+    print(f"{nome1} e {nome2} tem a mesma idade")
