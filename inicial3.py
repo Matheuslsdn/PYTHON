@@ -331,12 +331,82 @@
 #         break
 
 # atividade 40
-numero = 5
-print("Contagem")
+# numero = 5
+# print("Contagem")
 
+# while True:
+#     print(numero)
+#     numero = numero - 1
+#     if numero == 0:
+#         break
+# print("Fim!")
+
+#atividade 41
+# senha1 = int(input("Qual é a Senha? "))
+# while True:
+#     senha2 = int(input("Senha? "))
+#     if senha1 == senha2:
+#         print("Acesso permitido! Obrigado")
+#         break
+#     else:
+#         print("Senha inválida! Tente novamente")
+        
+#atividade 42
+# tentativas = 0 
+# while True:
+#     codigo = input("Por favor, digite seu pin: ")
+#     tentativas += 1
+#     if codigo == "1234":
+#         sucesso = True
+#         break
+#     if tentativas == 3:
+#         sucesso = False
+#         break
+#     print("Incorreto... tente novamente")
+# if sucesso == True:
+#     print("Acesso permitido! Obrigado")
+# else:
+#     print("Acesso negado! Tente novamente mais tarde")
+
+# pin = 1234
+# tentativas = 0
+# while True:
+#     codigo = input("Por favor, digite seu pin: ")
+#     tentativas += 1
+#     if codigo == pin:
+#         print("Acesso permitido! Obrigado")
+#         sucesso = True
+#         break
+#     else:
+#         sucesso = False
+#         print("Incorreto... tente novamente")
+#         print(tentativas)
+#     if sucesso == True:
+#         print("Acesso permitido! Obrigado")
+#         break
+
+#atividade 43
+ano = int(input("Em que ano estamos? "))
 while True:
-    print(numero)
-    numero = numero - 1
-    if numero == 0:
+    if ano % 4 == 0:
+        print("É ano bissexto.")
+        bissexto = True
         break
-print("Fim!")
+    elif ano % 4 != 0:
+        print("Não é ano bissexto.")
+        ano += 1
+        bissexto = False
+        break
+if bissexto == True:
+    ano += 4
+    print(f"O próximo ano bissesto será em {ano}")
+if bissexto == False:
+    ano += 1
+    print(f"O próximo ano bissexto será em {ano}")
+    
+
+    
+        
+        
+
+
