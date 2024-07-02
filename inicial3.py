@@ -311,11 +311,32 @@
 #     print("Errado!... tente de novo")
 
 # print("Pin correto! Obrigado")
-print("Olá")
+# print("Olá")
+# while True:
+#     texto = str(input("Você deseja continuar? "))
+#     if texto == "não":
+#         break
+#     print(input("Você deseja continuar? "))
+
+# print("Okay, até a próxima!")
+
+#atividade 39
+# from math import sqrt
+# while True:
+#     numero = int(input("Digite um número: "))
+#     if numero < 0:
+#         print("Número inválido! ")
+#     else:
+#         print(sqrt(numero))  
+#         break
+
+# atividade 40
+numero = 5
+print("Contagem")
+
 while True:
-    texto = str(input("Você deseja continuar? "))
-    if texto == "não":
+    print(numero)
+    numero = numero - 1
+    if numero == 0:
         break
-    print(input("Você deseja continuar? "))
-    
-print("Okay, até a próxima!")
+print("Fim!")
