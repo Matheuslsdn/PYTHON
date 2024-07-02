@@ -277,19 +277,45 @@
 #     print("impossivel passar de 100")
 
 #atividade 36
-# numero = int(("Digite um número "))
+# numero = int(input("Digite um número "))
 
 # if numero % 3 == 0:
-#     print("O número é divisível por 3")
+#     print("fizz")
 # elif numero % 5 == 0:
-#     print("O número é divisível por 5")
-
+#     print("buzz")
+# else:
+#     print("fizzbuzz")
 
 
 #atividade 37
-ano = int(input("Digite o ano você está "))
+# ano = int(input("Digite o ano você está "))
 
-if ano % 4 == 0 or ano % 100 == 0 and ano % 400 == 0:
-    print("O ano é bissexto")
-else:
-    print("O ano não é bissexto")
+# if ano % 4 == 0 or ano % 100 != 0 and ano % 400 == 0:
+#     print("O ano é bissexto")
+# else:
+#     print("O ano não é bissexto")
+
+#atividade 38 - laços de repetição While
+# while True:
+#     numero = int(input("entre com um número: ou diite -1 para parar "))
+#     if numero == -1:
+#         break
+#     print(numero ** 2)
+
+# print("programa encerado, obrigado!")
+
+# while True:
+#     codigo = input("Por favor, insira o PIN: ")
+#     if codigo == "1234":
+#         break
+#     print("Errado!... tente de novo")
+
+# print("Pin correto! Obrigado")
+print("Olá")
+while True:
+    texto = str(input("Você deseja continuar? "))
+    if texto == "não":
+        break
+    print(input("Você deseja continuar? "))
+    
+print("Okay, até a próxima!")
