@@ -368,41 +368,32 @@
 # else:
 #     print("Acesso negado! Tente novamente mais tarde")
 
-# pin = 1234
-# tentativas = 0
-# while True:
-#     codigo = input("Por favor, digite seu pin: ")
-#     tentativas += 1
-#     if codigo == pin:
-#         print("Acesso permitido! Obrigado")
-#         sucesso = True
-#         break
-#     else:
-#         sucesso = False
-#         print("Incorreto... tente novamente")
-#         print(tentativas)
-#     if sucesso == True:
-#         print("Acesso permitido! Obrigado")
-#         break
+pin = 1234
+tentativas = 0
+
+while True:
+    codigo = input("Por favor, digite seu pin: ")
+    tentativas += 1
+    if codigo == str(pin):  # Convert pin to string for comparison
+        print("Acesso permitido! Obrigado")
+        break
+    else:
+        print("Incorreto... tente novamente")
+        print(tentativas)
 
 #atividade 43
-ano = int(input("Em que ano estamos? "))
-while True:
-    if ano % 4 == 0:
-        print("É ano bissexto.")
-        bissexto = True
-        break
-    elif ano % 4 != 0:
-        print("Não é ano bissexto.")
-        ano += 1
-        bissexto = False
-        break
-if bissexto == True:
-    ano += 4
-    print(f"O próximo ano bissesto será em {ano}")
-if bissexto == False:
-    ano += 1
-    print(f"O próximo ano bissexto será em {ano}")
+# ano = int(input("Em que ano estamos? "))
+
+# if ano % 4 == 0:
+#     print("É ano bissexto.")
+# else:
+#     print("Não é ano bissexto.")
+
+# while True:
+#     ano += 1
+#     if ano % 4 == 0:
+#         print(f"O próximo ano bissexto será em {ano}")
+#         break
     
 
     
