@@ -470,13 +470,26 @@
 #     break 
 
 #atividade 52
-numero1 = int(input("Adivinhe o número: "))
-import random
-tentativas = 0
-numero2 = random.randint(1, 100)
-while numero1 != numero2:
-    tentativas += 1
-    if tentativas == 5:
-        print("Você perdeu")
+# numero1 = int(input("Adivinhe o número: "))
+# import random
+# tentativas = 0
+# numero2 = random.randint(1, 100)
+# while numero1 != numero2:
+#     tentativas += 1
+#     if tentativas == 5:
+#         print("Você perdeu")
+#         break
+#     numero1 = int(input("Adivinhe o número: "))
+
+#atividade 53
+saldo = 257
+
+while True:
+    saque = int(input("Qual é o valor que você deseja sacar? "))
+    if saque > saldo:
+        print("Valor indisponível")
+    elif saque % 10 == 0:
+        print("Aguarde o seu saque está sendo efetuado")
         break
-    numero1 = int(input("Adivinhe o número: "))
+    else:
+        print("Valor indisponível. Por favor, escolha um valor múltiplo de 10.")
