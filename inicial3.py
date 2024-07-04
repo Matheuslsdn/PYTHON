@@ -434,13 +434,12 @@
 #         break
 
 #atividade 48
-limite = int(input("Digite um número limite: "))
-base = 2
-numero = 1
-while numero <= limite:
-    print(numero)
-    numero *= base
-
+# limite = int(input("Digite um número limite: "))
+# base = 2
+# numero = 1
+# while numero <= limite:
+#     print(numero)
+#     numero *= base
 
 #atividade 49
 # limite = int(input("Digite um número limite: "))
@@ -452,7 +451,31 @@ while numero <= limite:
 #         break        
         
 #atividade 50
-# import random
-# numero_secreto = random.randint(1, 100)
-# print(numero_secreto)
+# soma = 0
+# while soma < 100:
+#     numero = int(input("Digite um número: "))
+#     soma += numero
+#     if soma >= 100:
+#         print(soma)
+#         break
+
+#atividade 51
+# import re
+# senha = input("Digite uma senha: ")
+# while True:
+#     if re.match(r'[A-Za-z0-9]+', senha):
+#         print("Senha válida")
+#         break
+#     else:
+#         print("Senha inválida")
+
+
+import re
+
+senha = input("Digite uma senha: ")
+while len(senha):
+    print(re.search("[A-Z]", senha))
+    print(re.search("[a-z]", senha))
+    print(re.search("[0-9]", senha))
+    break 
 
