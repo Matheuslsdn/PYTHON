@@ -461,21 +461,22 @@
 
 #atividade 51
 # import re
+
 # senha = input("Digite uma senha: ")
-# while True:
-#     if re.match(r'[A-Za-z0-9]+', senha):
-#         print("Senha válida")
-#         break
-#     else:
-#         print("Senha inválida")
+# while len(senha):
+#     print(re.search("[A-Z]", senha))
+#     print(re.search("[a-z]", senha))
+#     print(re.search("[0-9]", senha))
+#     break 
 
-
-import re
-
-senha = input("Digite uma senha: ")
-while len(senha):
-    print(re.search("[A-Z]", senha))
-    print(re.search("[a-z]", senha))
-    print(re.search("[0-9]", senha))
-    break 
-
+#atividade 52
+numero1 = int(input("Adivinhe o número: "))
+import random
+tentativas = 0
+numero2 = random.randint(1, 100)
+while numero1 != numero2:
+    tentativas += 1
+    if tentativas == 5:
+        print("Você perdeu")
+        break
+    numero1 = int(input("Adivinhe o número: "))
