@@ -368,18 +368,17 @@
 # else:
 #     print("Acesso negado! Tente novamente mais tarde")
 
-pin = 1234
-tentativas = 0
-
-while True:
-    codigo = input("Por favor, digite seu pin: ")
-    tentativas += 1
-    if codigo == str(pin):  # Convert pin to string for comparison
-        print("Acesso permitido! Obrigado")
-        break
-    else:
-        print("Incorreto... tente novamente")
-        print(tentativas)
+# pin = 1234
+# tentativas = 0
+# while True:
+#     codigo = input("Por favor, digite seu pin: ")
+#     tentativas += 1
+#     if codigo == str(pin):  # Convert pin to string for comparison
+#         print("Acesso permitido! Obrigado")
+#         break
+#     else:
+#         print("Incorreto... tente novamente")
+#         print(tentativas)
 
 #atividade 43
 # ano = int(input("Em que ano estamos? "))
@@ -394,10 +393,66 @@ while True:
 #     if ano % 4 == 0:
 #         print(f"O próximo ano bissexto será em {ano}")
 #         break
-    
 
+#atividade 44
+# numero = 0
+# while True:
+#     numero += 1
+#     if numero > 30:
+#         break
+#     if numero % 2 == 0:
+#         print(numero)
     
-        
-        
+#atividade 45
+# print("Você está pronto? ")
+# numero = int(input("Por favor, digite um número: ")) 
+# while True:
+#     numero = numero - 1
+#     if numero == 0:
+#         break 
+#     print(numero)
+# print("Agora!")
+    
+#atividade 46
+# numero = int(input("Por favor, digite um número: "))
+# soma = 1
+# while True:
+#     print(soma)
+#     soma += 1
+#     if soma > numero:
+#         break
 
+# print("Pronto")
+
+#atividade 47
+# limite = int(input("Digite um número limite: "))
+# numero = 1
+# while True:
+#     print(numero)
+#     numero = numero * 2
+#     if numero > limite:
+#         break
+
+#atividade 48
+limite = int(input("Digite um número limite: "))
+base = 2
+numero = 1
+while numero <= limite:
+    print(numero)
+    numero *= base
+
+
+#atividade 49
+# limite = int(input("Digite um número limite: "))
+# numero = 1
+# while True:
+#     print(numero)
+#     numero = numero * 2
+#     if numero > limite:
+#         break        
+        
+#atividade 50
+# import random
+# numero_secreto = random.randint(1, 100)
+# print(numero_secreto)
 
