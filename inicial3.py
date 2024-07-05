@@ -495,11 +495,53 @@
 #         print("Valor indisponível. Por favor, escolha um valor múltiplo de 10.")
 
 #atividade 54
-texto1 = input("Digite uma palavra: ")
-texto2 = input("Digite uma palavra: ")
-while len(texto1) != len(texto2):
-    print("As palavras possuem quantidades diferentes de letras.")
-    texto2 = input("Digite uma palavra: ")
+# texto1 = input("Digite uma palavra: ")
+# texto2 = input("Digite uma palavra: ")
+# while len(texto1) != len(texto2):
+#     print("As palavras possuem quantidades diferentes de letras.")
+#     texto2 = input("Digite uma palavra: ")
 
-print("As palavras possuem a mesma quantidade de letras.")
+# print("As palavras possuem a mesma quantidade de letras.")
 
+# inicio = "ex"
+# fim = "emplo"
+# palavra = inicio + fim
+# print(palavra)
+
+# palavra1 = "banana "
+# print(palavra1 * 3)
+
+# string_entrada = input("Por favor digite uma string ")
+# print(string_entrada)
+# print("-" * len(string_entrada))
+
+# texto1 = str(input("Digite uma string: "))
+# texto2 = str(input("Digite uma string: "))
+# if len(texto1) == len(texto2):
+#     print("As strings são igualmente longas")
+# elif len(texto1) > len(texto2):
+#     print(texto1)
+# else:
+#     print(texto2)
+
+#atividade 55
+# texto = str(input("Coloque uma palavra com o numero de caracteres escolhidos "))
+# print("#" * len(texto))
+
+#atividade 56
+# texto = str(input("Digite uma string: "))
+# print(texto)
+# print("-" * len(texto))
+
+#atividade 57
+# texto = input("digite uma string: ")
+# textode20 = texto.rjust(20, "*")
+# print(textode20)
+    
+#atividade 58
+texto = input("digite uma string: ")
+texto2 = ""
+quadro = texto2.rjust(30, "*")
+print(quadro)
+print(texto)
+print(quadro)
