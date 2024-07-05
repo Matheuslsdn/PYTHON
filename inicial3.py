@@ -482,14 +482,24 @@
 #     numero1 = int(input("Adivinhe o número: "))
 
 #atividade 53
-saldo = 257
+# saldo = 257
 
-while True:
-    saque = int(input("Qual é o valor que você deseja sacar? "))
-    if saque > saldo:
-        print("Valor indisponível")
-    elif saque % 10 == 0:
-        print("Aguarde o seu saque está sendo efetuado")
-        break
-    else:
-        print("Valor indisponível. Por favor, escolha um valor múltiplo de 10.")
+# while True:
+#     saque = int(input("Qual é o valor que você deseja sacar? "))
+#     if saque > saldo:
+#         print("Valor indisponível")
+#     elif saque % 10 == 0:
+#         print("Aguarde o seu saque está sendo efetuado")
+#         break
+#     else:
+#         print("Valor indisponível. Por favor, escolha um valor múltiplo de 10.")
+
+#atividade 54
+texto1 = input("Digite uma palavra: ")
+texto2 = input("Digite uma palavra: ")
+while len(texto1) != len(texto2):
+    print("As palavras possuem quantidades diferentes de letras.")
+    texto2 = input("Digite uma palavra: ")
+
+print("As palavras possuem a mesma quantidade de letras.")
+
