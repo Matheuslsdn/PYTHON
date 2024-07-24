@@ -539,9 +539,33 @@
 # print(textode20)
     
 #atividade 58
-texto = input("digite uma string: ")
-texto2 = ""
-quadro = texto2.rjust(30, "*")
-print(quadro)
-print(texto)
-print(quadro)
+# texto = input("digite uma string: ")
+# texto2 = ""
+# quadro = texto2.rjust(30, "*")
+# print(quadro)
+# print(texto)
+# print(quadro)
+
+# while True:
+#     numero = int(input("Por favor, digite um número: "))
+#     if numero == -1:
+#         break
+#     while numero > 0:
+#         print(numero)
+#         numero -= 1
+
+# def mensagem():
+#     print("Minha pika")
+
+# mensagem()
+
+# def sete_irmaos():
+#     print("João")
+#     print("Matheus")
+#     print("Pedro")
+#     print("Paulo")
+#     print("Felipe")
+#     print("Tito")
+#     print("Lucas")
+    
+# sete_irmaos()
