@@ -38,17 +38,36 @@
 #                 print("0", end="")
 #         print()
 # mesa_xadrez()
-def mesa_xadrez(tamanho):
+# def mesa_xadrez(tamanho):
+#     x = 0
+#     while x < tamanho:
+#         y = 0
+#         while y < tamanho:
+#             if (x + y) % 2 == 0:
+#                 print("1", end=" ")
+#             else:
+#                 print("0", end=" ")
+#             y += 1
+#         print()
+#         x += 1
+# mesa_xadrez(40)
+
+#Ativ 05
+
+def quadrado_string(tamanho):
     x = 0
     while x < tamanho:
         y = 0
         while y < tamanho:
-            if (x + y) % 2 == 0:
-                print("1", end=" ")
+            if (x + y) % 4 == 0:
+                print("C", end=" ")
+            elif (x + y) % 4 == 1:
+                print("A", end=" ")
+            elif (x + y) % 4 == 2:
+                print("Z", end=" ")
             else:
-                print("0", end=" ")
+                print("S", end=" ")
             y += 1
         print()
         x += 1
-mesa_xadrez(40)
-
+quadrado_string(10)                
