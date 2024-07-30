@@ -259,15 +259,168 @@
 
 #Ativ 01
 
-def media():
-    lista = [14, 85, 2, 29, 45, 12]
-    return sum(lista) / len(lista)
+# def media():
+#     lista = [14, 85, 2, 29, 45, 12]
+#     return sum(lista) / len(lista)
 
-print("A média é", media())
+# print("A média é", media())
 
+#Ativ 02
 
 # def alcance(lista):
 #     return max(lista) - min(lista)
 
 # lista = [3, 1, 4, 2, 5]
 # print(alcance(lista)) 
+
+#-----------------------------------------------
+
+# minha_lista = [3, 4, 5, 9, 1]
+
+# for item in minha_lista:
+#     print(item)  
+
+# def tolascado():
+#     entrada = input("Digite uma string: ")
+#     for caractere in entrada:
+#         print(f"{caractere}")
+       
+
+# tolascado()
+
+# for i in range(5): # com um argumento repetir um certo argumento 
+#     print(i) 
+
+# for i in range(3, 7): # com dois argumentos a função retornará um intervalo entre os dois números. a função range fornece um intervalo começando em A e terminando em B -1
+#     print(i)
+
+# for i in range(1, 9, 2): # com três argumentos a funçaõ vai de a para b -1 e finaliza em c a cada passo  
+#     print(i)
+
+# for i in range(6, 2, -1): # com argumento negativo a função conta do frente pra trás
+#     print(i)
+
+# def inteiro():
+#     n = int(input("Digite um número inteiro positivo: "))
+#     if n <= 0:
+#         print("Erro: o número deve ser positivo.")
+#     else:
+#         for i in range(-n, n + 1):
+#             if i != 0:
+#                 print(i)
+
+# inteiro()
+
+#-----------------------------------------------
+
+#Ativ 04
+
+# def lista_estrelas(numeros):
+#     for numero in numeros:
+#         print("#" * numero)
+
+# numeros = [3, 7, 1, 1, 2]
+# lista_estrelas(numeros)
+
+#Ativ 05
+
+# def anagramas(palavra1, palavra2):
+#     return sorted(palavra1.lower()) == sorted(palavra2.lower())
+
+# print(anagramas("cagada", "dimensional"))
+# print(anagramas("meteoro ", "de pegasu"))
+# print(anagramas("kamehame", "haaaaaaa"))
+# print(anagramas("casa", "acas"))
+
+#Ativ 06
+
+# def soma_positiva(lista):
+#     soma = 0
+#     for x in lista:
+#         if x > 0:
+#             soma += x
+#     return soma
+
+# lista = [1, -2, 3, -4, 5]
+# print(soma_positiva(lista))
+
+#Ativ 07
+
+# def numeros_pares(lista):
+#     pares = []
+#     for x in lista:
+#         if x % 2 == 0:
+#             pares.append(x)
+#     return pares
+
+# lista = [9, 20, 66, 13, 5, 63]
+# print(numeros_pares(lista))
+
+#Ativ 08
+
+# def lista_soma(lista1, lista2):
+#     resultado = []
+#     for x, y in zip(lista1, lista2):
+#         resultado.append(x + y)
+#     return resultado
+
+# lista1 = [20, 10, 23, 17, 25]
+# lista2 = [61, 47, 38, 19, 17]
+# print(lista_soma(lista1, lista2))  
+
+# def mais_caracteres(string):
+#     contador = {}
+#     for char in string:
+#         contador[char] = contador.get(char, 0) + 1
+#     max_count = max(contador.values())
+#     for char, count in contador.items():
+#         if count == max_count:
+#             return char
+        
+# string = "eu desisto, que dogras"
+# print(mais_caracteres(string))
+
+# Ativ 09
+
+def sem_vogal(s):
+    vogais = 'aeiouãõ'
+    resultado = ''
+    for char in s:
+        if char not in vogais:
+            resultado += char
+    return resultado
+
+print(sem_vogal("Se meu pau não parar de crescer..."))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
