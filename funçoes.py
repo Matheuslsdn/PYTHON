@@ -370,56 +370,201 @@
 
 # def mais_caracteres(string):
 #     contador = {}
-#     for char in string:
-#         contador[char] = contador.get(char, 0) + 1
+#     for carater in string:
+#         contador[carater] = contador.get(carater, 0) + 1
 #     max_count = max(contador.values())
-#     for char, count in contador.items():
+#     for carater, count in contador.items():
 #         if count == max_count:
-#             return char
+#             return carater
         
-# string = "eu desisto, que dogras"
+# string = "eu desisto, que dogras"                         
 # print(mais_caracteres(string))
 
 # Ativ 09
 
-def sem_vogal(s):
-    vogais = 'aeiouãõ'
-    resultado = ''
-    for char in s:
-        if char not in vogais:
-            resultado += char
-    return resultado
+# def sem_vogal(testo):
+#     vogais = 'aeiouãõ'
+#     resultado = ''
+#     for caractere in testo:
+#         if caractere not in vogais:
+#             resultado += caractere
+#     return resultado
 
-print(sem_vogal("Se meu pau não parar de crescer..."))
+# print(sem_vogal("Se meu pau não parar de crescer..."))
+
+# pessoas = [[12, 15, 17], [10, 14], [7, 14, 21]]
+
+# print(pessoas)
+# print(print[1])
+# print(pessoas[1][1])
+
+# pessoas = [["manga", 12, 15, 17], ["pera", 10, 14], ["mamão", 7, 14, 21]]
+
+# for pessoa in pessoas:
+#     nome = pessoas[0]
+#     idade = pessoas[1]
+#     altura = pessoas[2]
+#     print(nome, idade, altura)
+
+# minha_matriz = [[1, 2, 3], [3, 2, 1],[4, 5, 6]]
+# print(minha_matriz[0][1]) 
+# print(minha_matriz[1][0])
+# minha_matriz[1][0] = 10
+# print(minha_matriz[1][0])
+
+# conta_elementos_match()
+
+# def conta_elementos_match(minha_matriz: list[list[int]], elemento: int) -> int:
+#   contador = 0
+#   for linha in minha_matriz:
+#     for numero in linha:
+#       if numero == elemento:
+#         contador += 1
+#   return contador
+# minha_matriz = [[1, 2, 3], [2, 4, 2], [5, 2, 1]]
+# valor_procurado = 2
+# resultado = conta_elementos_match(minha_matriz, valor_procurado)
+# print(f"O valor {valor_procurado} aparece {resultado} vezes na matriz.")
 
 
 
+# def imprime_tabuleiro(sudoku):
+#     for a in range(len(sudoku)):
+#         for b in range(len(sudoku[0])):
+#             valor = sudoku[a][b]
+#             if valor == 0:
+#                 valor = '-'
+#             if b == 8:
+#                 print(valor)
+#             else:
+#                 print(valor, end="")
+#         if a != len(sudoku) - 1:
+#             print()
+
+# sudoku = [
+#   [9, 0, 0, 0, 8, 0, 3, 0, 0],
+#   [0, 0, 0, 2, 5, 0, 7, 0, 0],
+#   [0, 2, 0, 3, 0, 0, 0, 0, 4],
+#   [0, 9, 4, 0, 0, 0, 0, 0, 0],
+#   [0, 0, 0, 7, 3, 0, 5, 6, 0],
+#   [7, 0, 5, 0, 6, 0, 4, 0, 0],
+#   [0, 0, 7, 8, 0, 3, 9, 0, 0],
+#   [0, 0, 1, 0, 0, 0, 0, 0, 3],
+#   [3, 0, 0, 0, 0, 0, 0, 0, 2]
+# ]
+
+# imprime_tabuleiro(sudoku)
+
+# def imprime_tabuleiro(sudoku):
+#     for item in sudoku:
+#         for itens in item:
+#             if itens == 0:
+#                 print((" "), end="")
+#             else:
+#                 print(itens, end="")
+#         print("")
+
+# sudoku = [
+#   [9, 0, 0, 0, 8, 0, 3, 0, 0],
+#   [0, 0, 0, 2, 5, 0, 7, 0, 0],
+#   [0, 2, 0, 3, 0, 0, 0, 0, 4],
+#   [0, 9, 4, 0, 0, 0, 0, 0, 0],
+#   [0, 0, 0, 7, 3, 0, 5, 6, 0],
+#   [7, 0, 5, 0, 6, 0, 4, 0, 0],
+#   [0, 0, 7, 8, 0, 3, 9, 0, 0],
+#   [0, 0, 1, 0, 0, 0, 0, 0, 3],
+#   [3, 0, 0, 0, 0, 0, 0, 0, 2]
+# ]
+
+# imprime_tabuleiro(sudoku)
+
+# meu_dicionario = {}
+# meu_dicionario["apina"] = "macaco"
+# meu_dicionario["doguinho"] = "cachorro"
+# meu_dicionario["bichano"] = "gato"
+# print(meu_dicionario)
+# print(meu_dicionario["apina"])
+# palavra = input("Por favor, digite uma palavra: ")
+# if palavra in meu_dicionario:
+#     print("tradução", meu_dicionario[palavra])
+# else:
+#     print("palavra não encontrada")
+          
+# resultado = {}
+# resultado["Mary"] = 4
+# resultado["John"] = 5
+# resultado["Jane"] = 3
+
+# lista = {}
+# lista[5] = [1, 2, 3]
+# lista[42] = [5, 4, 5, 4, 4]
+# lista[100] = [5, 2, 3]
+
+# meu_dicionario = {}
+# meu_dicionario["apina"] = "macaco"
+# meu_dicionario["doguinho"] = "cachorro"
+# meu_dicionario["bichano"] = "gato"
+
+# for chave in meu_dicionario:
+#     print("chave",chave)
+#     print("valor",meu_dicionario[chave])
+
+# lista_palavras = [
+#   "banana", "leite", "cerveja", "queijo", "leite azedo", "suco", "linguiça",
+#   "tomate", "pepino", "manteiga", "margarina", "queijo", "linguiça",
+#   "cerveja", "leite azedo", "leite azedo", "manteiga", "cerveja", "chocolate"
+#   ]
+
+# def contagens(minha_lista):
+#     palavras = {}
+#     for palavra in minha_lista:
+#         if palavra not in palavras:
+#             palavras[palavra] = 0
+#         palavras[palavra] += 1
+#         return palavras
+
+# print(contagens(lista_palavras))
+
+# def histogram(teste):
+#     lista = {}
+#     for letra in teste:
+#         if letra in lista:
+#             lista[letra] += 1
+#         else:
+#             lista[letra] = 1
+
+#     for letra in sorted(lista.keys()):
+#         print(f"{letra}: {'*' * lista[letra]}")
+
+# histogram("Sharizard, pikachu, corrida maluca")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def app():
+    comando = int(input("digite o comando: "))
+    while comando:
+        if comando == 1:
+            pesquisa()
+        elif comando == 2:
+            adicionar()
+        elif comando == 3:
+            break
+        else:
+            print("comando invalido, Tente novamente")
+            break
+    
+def pesquisa():
+    lista_de_contato = {}
+    palavra = input("digite a palavra: ")
+    if palavra in lista_de_contato:
+        print(f"o contato {palavra} foi encontrado")
+    else:
+        print(f"o contato {palavra} não foi encontrado")        
+        add = str(print("Deseja adicionar? S/N "))
+        if add == "S" and add == "s":
+            adicionar()
+        else:
+            return lista_de_contato
+app()
 
 
 
