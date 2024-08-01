@@ -539,31 +539,40 @@
 # histogram("Sharizard, pikachu, corrida maluca")
 
 
+lista_de_contato = {}
+
 def app():
-    comando = int(input("digite o comando: "))
-    while comando:
+    while True:
+        comando = int(input("digite o comando: "))
         if comando == 1:
             pesquisa()
         elif comando == 2:
             adicionar()
+        elif comando == "":
+            print("comando invalido")
         elif comando == 3:
             break
         else:
             print("comando invalido, Tente novamente")
-            break
-    
+
 def pesquisa():
-    lista_de_contato = {}
     palavra = input("digite a palavra: ")
     if palavra in lista_de_contato:
         print(f"o contato {palavra} foi encontrado")
+        print(f"Nome: {lista_de_contato[palavra]['nome']}")
+        print(f"Número: {lista_de_contato[palavra]['numero']}")
     else:
-        print(f"o contato {palavra} não foi encontrado")        
-        add = str(print("Deseja adicionar? S/N "))
-        if add == "S" and add == "s":
+        print(f"o contato {palavra} não foi encontrado")
+        add = input("Deseja adicionar? s/n ")
+        if add.lower() == "s":
             adicionar()
-        else:
-            return lista_de_contato
+
+def adicionar():
+    nome = input("digite o nome: ")
+    numero = input("digite o número: ")
+    lista_de_contato[nome] = {'nome': nome, 'numero': numero}
+    print(f"contato {nome} adicionado com sucesso")
+
 app()
 
 
