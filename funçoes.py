@@ -538,43 +538,175 @@
 
 # histogram("Sharizard, pikachu, corrida maluca")
 
+#Ativ 11
 
-lista_de_contato = {}
+# lista_de_contato = {}
 
-def app():
-    while True:
-        comando = int(input("digite o comando: "))
-        if comando == 1:
-            pesquisa()
-        elif comando == 2:
-            adicionar()
-        elif comando == "":
-            print("comando invalido")
-        elif comando == 3:
-            break
-        else:
-            print("comando invalido, Tente novamente")
+# def app():
+#     while True:
+#         comando = int(input("digite o comando: "))
+#         if comando == 1:
+#             pesquisa()
+#         elif comando == 2:
+#             adicionar()
+#         elif comando == 3:
+#             break
+#         else:
+#             print("comando invalido, Tente novamente")
 
-def pesquisa():
-    palavra = input("digite a palavra: ")
-    if palavra in lista_de_contato:
-        print(f"o contato {palavra} foi encontrado")
-        print(f"Nome: {lista_de_contato[palavra]['nome']}")
-        print(f"Número: {lista_de_contato[palavra]['numero']}")
-    else:
-        print(f"o contato {palavra} não foi encontrado")
-        add = input("Deseja adicionar? s/n ")
-        if add.lower() == "s":
-            adicionar()
+# def pesquisa():
+#     palavra = input("digite a palavra: ")
+#     if palavra in lista_de_contato:
+#         print(f"o contato {palavra} foi encontrado")
+#         print(f"Nome: {lista_de_contato[palavra]['nome']}")
+#         print(f"Número: {lista_de_contato[palavra]['numero']}")
+#     else:
+#         print(f"o contato {palavra} não foi encontrado")
+#         add = input("Deseja adicionar? s/n ")
+#         if add.lower() == "s":
+#             adicionar()
 
-def adicionar():
-    nome = input("digite o nome: ")
-    numero = input("digite o número: ")
-    lista_de_contato[nome] = {'nome': nome, 'numero': numero}
-    print(f"contato {nome} adicionado com sucesso")
+# def adicionar():
+#     nome = input("digite o nome: ")
+#     numero = input("digite o número: ")
+#     lista_de_contato[nome] = {'nome': nome, 'numero': numero}
+#     print(f"contato {nome} adicionado com sucesso")
 
-app()
+# app()
+
+#Ativ 12
+
+# Inicializa a lista de contatos como um dicionário vazio
+# lista_de_contato = {}
+
+# def app():
+#     while True:
+#         print("\nMenu:")
+#         print("1. Pesquisar contato")
+#         print("2. Adicionar ou atualizar contato")
+#         print("3. Listar todos os contatos")
+#         print("4. Sair")
+#         comando = input("Digite o comando: ")
+#         if comando == "1":
+#             pesquisa()
+#         elif comando == "2":
+#             adicionar()
+#         elif comando == "3":
+#             listar_contatos()
+#         elif comando == "4":
+#             print("Saindo do aplicativo. Até logo!")
+#             break
+#         else:
+#             print("Comando inválido, tente novamente.")
+
+# def pesquisa():
+#     palavra = input("Digite o nome do contato: ")
+#     contato = lista_de_contato.get(palavra)
+#     if contato:
+#         print(f"Contato {palavra} foi encontrado:")
+#         print(f"Nome: {contato['nome']}")
+#         print("Números:")
+#         for numero in contato['numeros']:
+#             print(f"- {numero}")
+#     else:
+#         print(f"O contato {palavra} não foi encontrado.")
+#         add = input("Deseja adicionar? (s/n) ")
+#         if add == "s":
+#             adicionar(palavra)
+
+# def adicionar(nome=None):
+#     if nome is None:
+#         nome = input("Digite o nome: ")  
+#     numeros = []
+#     if nome in lista_de_contato:
+#         print(f"Contato {nome} já existe. Números atuais:")
+#         for numero in lista_de_contato[nome]['numeros']:
+#             print(f"- {numero}")
+#         alterar = input("Deseja adicionar mais números? (s/n) ")
+#         if alterar != 's':
+#             return
+#     while True:
+#         numero = input("Digite o número (ou pressione Enter para parar): ")
+#         if not numero:
+#             break
+#         numeros.append(numero)
+#     if nome in lista_de_contato:
+#         lista_de_contato[nome]['numeros']
+#     else:
+#         lista_de_contato[nome] = {'nome': nome, 'numeros': numeros}
+#     print(f"Contato {nome} atualizado com sucesso.")
+
+# def listar_contatos():
+#     if not lista_de_contato:
+#         print("Nenhum contato encontrado.")
+#         return
+#     print("Lista de Contatos:")
+#     for nome, contato in lista_de_contato.items():
+#         print(f"Nome: {nome}")
+#         print("Números:")
+#         for numero in contato['numeros']:
+#             print(f"- {numero}")
+
+# app()
 
 
+#----------------------------------------------------------------
 
+# staff = {"David": "Pedro", "Alana":"Sophia", "Pedro": "Alana"}
+# del staff ["David"]
+# print(staff)
 
+# staff = {"David": "Pedro", "Alana":"Sophia", "Pedro": "Alana"}
+# deleted = staff.pop("David")
+# print(staff)
+# print(deleted,"deleted")
+
+#Ativ 13
+
+# def invert(dicionario: dict):
+#     if len(dicionario.values()) != len(set(dicionario.values())):
+#         raise ValueError("O dicionário tem valores duplicados.")
+
+#     dicionario_invertido = {a: b for b, a in dicionario.items()}
+#     return dicionario_invertido
+
+# dicionario = {"a": 1, "b": 2, "c": 3}
+# print(invert(dicionario))  
+
+#Ativ 14
+
+# def add_filme(database: list, nome: str, diretor: str, ano: int, lancamento: int) -> None:
+#     filme = {
+#         "nome": nome,
+#         "diretor": diretor,
+#         "ano": ano,
+#         "tempo de execução": lancamento
+#     }
+
+#     database.append(filme)
+# database = []
+# add_filme(database, "O Poderoso Chefão", "Francis Ford Coppola", 1972, 177)
+# add_filme(database, "O Senhor dos Anéis: A Sociedade do Anel", "Peter Jackson", 2001, 178)
+
+# print(database)
+
+#Ativ 15
+
+# def encontre_filmes(database: list, busca_termo: str):
+#     busca_termo = busca_termo.lower()
+#     filmes_encontrados = [filme for filme in database if busca_termo in filme["nome"].lower()]
+
+#     return filmes_encontrados
+# database = [
+#     {"nome": "Anaconda", "diretor": "Luis Llosa", "ano": 1997, "tempo de execução": 89},
+#     {"nome": "Anatomia da Greyce", "diretor": "Desconhecido", "ano": 2022, "tempo de execução": 120},
+#     {"nome": "O Poderoso Chefão", "diretor": "Francis Ford Coppola", "ano": 1972, "tempo de execução": 177},
+#     {"nome": "O Senhor dos Anéis: A Sociedade do Anel", "diretor": "Peter Jackson", "ano": 2001, "tempo de execução": 178},
+#     {"nome": "Pulp Fiction", "diretor": "Quentin Tarantino", "ano": 1994, "tempo de execução": 168},
+#     {"nome": "O Silêncio dos Inocentes", "diretor": "Jonathan Demme", "ano": 1991, "tempo de execução": 118},
+#     {"nome": "A Lista de Schindler", "diretor": "Steven Spielberg", "ano": 1993, "tempo de execução": 195},
+#     {"nome": "Forrest Gump", "diretor": "Robert Zemeckis", "ano": 1994, "tempo de execução": 142}
+# ]
+
+# filmes_encontrados = encontre_filmes(database, "ana")
+# print(filmes_encontrados)
